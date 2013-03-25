@@ -2,7 +2,7 @@
 
 <p>
   <b>User:</b>
-  <%= @post.user_id %>
+  <%= @post.user.email %>
 </p>
 
 <p>
@@ -12,7 +12,7 @@
 
 <p>
   <b>Content:</b>
-  <%= @post.content %>
+  <%= simple_format(@post.content) %>
 </p>
 
 
