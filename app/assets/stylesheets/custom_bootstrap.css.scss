@@ -1,2 +1,10 @@
+$baseFontFamily: Varela;
+@import url(http://fonts.googleapis.com/css?family=Varela);
+
 @import "bootstrap";
+
+body {
+	padding-top: 60px;
+}
+
 @import "bootstrap-responsive";
