@@ -1,5 +1,5 @@
 <div class="box">
-	<h1><%= post.title %></h1>
+	<h1><%= link_to "#{post.title}", post %></h1>
 	<h2><%= "#{post.user.email} at #{post.created_at}" %></h2>
 	<p><%= simple_format(post.content) %></p>
 	<div class="pull-right">
