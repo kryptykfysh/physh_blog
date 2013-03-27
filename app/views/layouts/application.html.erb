@@ -9,7 +9,7 @@
 <body>
 	<%= render 'layouts/header' %>
 	<div class="container">
-		<div class="span4 offset3">
+		<div class="span6 offset2">
 			<% flash.each do |name, msg| %>
 				<%= content_tag(:div, class: "alert alert-#{name}") do -%>
 					<%= msg %>

@@ -1,0 +1,11 @@
+<div class="box">
+	<h1><%= post.title %></h1>
+	<h2><%= "#{post.user.email} at #{post.created_at}" %></h2>
+	<p><%= simple_format(post.content) %></p>
+	<div class="pull-right">
+		<% if current_user == post.user %>
+			<%= link_to 'Edit', edit_post_path(post) %> | 
+		<% end %>
+		<%= link_to 'Back', :back %>
+	</div>
+</div>
