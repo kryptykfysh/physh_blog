@@ -1,11 +1,22 @@
 PhyshBlog::Application.routes.draw do
+  get "users/index"
+
+  get "users/new"
+
+  get "users/show"
+
+  get "users/edit"
+
+  get "users/destroy"
+
+  get "users/create"
+
   resources :roles
-
-
   resources :posts
 
+  devise_for :users, controllers: { registrations: "users/registrations" }
 
-  devise_for :users
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
