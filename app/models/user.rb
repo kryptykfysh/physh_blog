@@ -14,4 +14,5 @@ class User < ActiveRecord::Base
   									uniqueness: true
 
   has_many :posts, dependent: :delete_all
+  has_and_belongs_to_many :roles
 end
